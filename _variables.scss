@@ -1,0 +1,301 @@
+/*VARIABLES.SCSS in zcui/styles/components*/
+
+/* Font settings */
+%f-primary-light {
+    font-family: 'Inter';
+    font-weight: 300;
+  }
+  
+  %f-primary-normal {
+    font-family: 'Inter';
+    font-weight: normal;
+  }
+  
+  %f-primary-medium {
+    font-family: 'Inter';
+    font-weight: 500;
+  }
+  
+  %f-primary-bold {
+    font-family: 'Inter';
+    font-weight: 700;
+  }
+  
+  /* Font size */
+  $very-small-font-size: 12px;
+  $small-font-size: 13px;
+  $base-font-size: 14px;
+  $smaller-than-medium-font-size: 15px;
+  $medium-font-size: 16px;
+  $more-medium-font-size: 17px;
+  $smaller-large-font-size: 18px;
+  $large-font-size: 19px;
+  $largest-font-size: 20px;
+  $title-font-size: 22px;
+  $medium-title-font-size: 24px;
+  $more-medium-title-font-size: 26px;
+  $very-small-font-size-second: 9px;
+  $small-font-size-second: 10px;
+  $base-font-size-second: 11px;
+  $count-font-size: 8px;
+  $h1-size: 30px;
+  $h2-size: $largest-font-size;
+  $h3-size: $more-medium-font-size;
+  $h4-size: $base-font-size;
+  $h5-size: $small-font-size;
+  $h6-size: $very-small-font-size;
+  $p-size: $smaller-large-font-size;
+  $h1-medium-size: 40px;
+  $h1-small-size: 35px;
+  $h2-medium-size: 27px;
+  $h3-medium-size: 25px;
+  $h2-small-size: 2em;
+  $idle-size: 70px;
+  
+  /* Percentage */
+  $very-small-font-size-percentage: 80%;
+  $small-font-size-percentage: 92%;
+  $font-size-percentage: 95%;
+  $smaller-than-medium-font-size-percentage: 110%;
+  $very-small-font-size-percentage-second: 86%;
+  $small-font-size-percentage-second: 90%;
+  
+  /*Form Element*/
+  $form-element-small-size: $very-small-font-size;
+  $form-element-size: $small-font-size;
+  /*Btn*/
+  $small-btn-font-size: $very-small-font-size;
+  $base-btn-font-size: $small-font-size;
+  $medium-btn-font-size: $smaller-large-font-size;
+  
+  /* Link */
+  $recall-link-font-size: $small-font-size-second;
+  
+  /* Pagination */
+  $pagination-size: $small-font-size;
+  
+  /*Addresses List*/
+  $addresses-list-font-size: $base-font-size;
+  $small-addresses-list-font-size: $very-small-font-size;
+  
+  /*Status icon*/
+  $status-icon-font-size: $smaller-large-font-size;
+  
+  /* Line Height*/
+  $line-height: 100%;
+  $form-element-line-height: 108%;
+  $close-lightbox-line-height: 111%;
+  $very-small-line-height-second: 116%;
+  $very-small-line-height: 120%;
+  $small-line-height-second: 127%;
+  $small-line-height: 130%;
+  $base-line-height: 135%;
+  $medium-line-height: 140%;
+  $more-medium-line-height: 150%;
+  $smaller-large-line-height: 166%;
+  $large-line-height: 200%;
+  $medium-second-line-height: 145%;
+  $more-medium-second-line-height: 148%;
+  
+  /* Breakpoints */
+  $breakpoint-ssm: 374px;
+  $breakpoint-sm: 600px;
+  $breakpoint-md: 767px;
+  $breakpoint-lg-m: 992px;
+  $breakpoint-lg: 1025px;
+  $breakpoint-m: 1300px;
+  $breakpoint-xlg: 1750px;
+  $breakpoint-xl: 1600px;
+  
+  /* General color scheme */
+  :root {
+    --color-primary: 255, 221, 48;
+    --color-links: var(--color-primary);
+    --color-secondary: 0, 0, 0;
+    --color-headings: var(--color-secondary);
+    --color-body: 68, 68, 68;
+    --color-white: 255, 255, 255;
+    --color-black: 0, 0, 0;
+    --color-gray: 129, 129, 129;
+    --color-gray-100: 250, 250, 250;
+    --color-gray-200: 252, 252, 252;
+    --color-gray-300: 246, 246, 246;
+    --color-gray-400: 207, 221, 225;
+    --color-gray-500: 176, 176, 176;
+    --color-gray-600: 151, 151, 151;
+    --color-gray-700: 139, 139, 139;
+    --color-success: 29, 203, 164;
+    --color-warning: 255, 205, 40;
+    --color-sections-border: 224, 224, 224;
+    --color-error: 242, 94, 79;
+    --color-notifications: 239, 76, 138;
+    --color-red: 255, 0, 0 ;
+    --color-maroon: 153, 0, 0;
+    --color-blue: 0, 0, 153;
+    --color-sale-text: 111, 111, 111;
+  
+    /* Header */
+    --color-top-nav-text: var(--color-white); //Products, Orders, Quotes
+    --color-top-nav: 203, 208, 214;
+    --color-top-nav-second: 43, 59, 77;
+    --color-main-account: var(--color-white); //background to account menu
+    --color-text-primary: var(--color-white); //little drop down arrow next to Products
+    --color-sub-menu-bg: var(--color-white); 
+    --color-account-bg: var(--color-gray-300);
+    --color-account-text:  var(--color-black); //account menu text
+  
+    /* Body */
+    --color-body-bg: var(--color-gray-300); //background of the entire page
+    --color-content-bg: var(--color-white); //background of site's information area
+    --color-title-bg: var(--color-primary); //background of recent orders title boxes
+    --color-content: var(--color-black); //cart icon 
+    --color-content-second: var(--color-gray-600); //text under Quick Order
+    --color-content-third: var(--color-gray); 
+    --color-section-second-border: var(--color-gray-500);
+  
+    /* Welcome Screen */
+    --color-bg-hamburger: RGB(var(--color-white));
+    --color-bg-welcome-content: RGB(var(--color-white));
+    --color-bg-welcome-form: RGB(var(--color-secondary));
+    --color-fg-welcome: RGB(var(--color-body));
+  
+    /* Primary Button */
+    --color-bg-primary-button: RGB(var(--color-primary)); //'Login' button on zaelab portal
+    --color-fg-primary-button: RGB(var(--color-black)); //'Login' text
+    --color-bg-primary-button-hover: RGB(var(--color-primary)); //'Login' button on zaelab portal when hovered over
+    --color-fg-primary-button-hover: RGB(var(--color-black));
+  
+    /* Secondary Button */
+    --color-bg-secondary-button: RGB(183, 200, 205);
+    --color-fg-secondary-button: RGB(var(--color-white));
+    --color-bg-secondary-button-hover: RGB(var(--color-primary));
+    --color-fg-secondary-button-hover: RGB(var(--color-white));
+  
+    /* Form */
+    --color-form-content: var(--color-gray-700); // zaelab login screen Email Address & Password
+    --color-form-bg: var(--color-white); // background Quick Order boxes
+    --color-form-border: 202, 202, 202; //borders of Quick Order & quantity boxes; gray
+    --color-form-border-dropdown: var(--color-gray-600); 
+    --color-form-bg-second: 236, 237, 237;
+    --color-sub-heading: var(--color-gray);
+    --color-suggestions: var(--color-gray-500);
+    --color-form-content-second: var(--color-white);
+    --color-form-border-second: var(--color-white);
+  
+    /* Footer */
+    --color-bg-footer: var(--color-secondary); //footer background (terms & conditions, etc.)
+    --color-fg-footer: var(--color-white); //text of above
+  
+    /* Tables */
+    --color-table-th-background: RGB(var(--color-gray-400));
+    --color-table-th-foreground: RGB(var(--color-headings));
+  
+    /* Modal Dialogs */
+    --color-modal-btn: 136, 136, 136;
+    --color-modal-bg: var(--color-white);
+    --color-modal-text: var(--color-gray-600);
+  
+    /*Cart*/
+    --color-bg-discount: var(--color-gray-400);
+  
+    /* Product slider */
+    --color-bg-product-slider: var(--color-white); //'Picked for You' background
+    --color-price-item-content: var(--color-gray-600); 
+    --color-product-text: var(--color-gray-600);
+    --color-product-text-second: var(--color-white);
+  
+    /* Address item */
+    --color-address-item-bg: var(--color-white); //background of addresses in dashboard > account > saved addresses screen
+    --color-address-border: var(--color-gray-500); //border of addresses on above
+  
+    /* Language */
+    --color-language-text: var(--color-white);
+    --color-language-bg: var(--color-white);
+  
+    /* Dashboard */
+    --color-dashboard-bg: var(--color-gray-300);
+    --color-banner-section: var(--color-white);
+    --color-dashboard-text: var(--color-gray);
+  }
+  
+  /* Miscellaneous */
+  $horizontal-border: 1px solid RGBA(var(--color-black), .1);
+  
+  /* Modal Dialogs */
+  $lightbox-shadow-md: 0 10px 20px RGBA(var(--color-black), .2);
+  $lightbox-shadow-sm: 0 2px 14px RGBA(var(--color-black), .16);
+  $lightbox-area-xl: 0 3px 40px RGBA(var(--color-black), .1);
+  $lightbox-border-radius: 4px;
+  
+  /* Forms */
+  $form-bg-box: RGBA(var(--color-form-bg-second), .84);
+  $form-shadow: inset 0 1px 3px RGB(var(--color-gray-400));
+  $form-mark-shadow: inset 0 1px 3px RGBA(var(--color-black), .12);
+  $form-content-area-shadow: 0 2px 5px RGBA(var(--color-black), .05);
+  
+  /* Address */
+  $address-item-hover-shadow: 0 3px 10px RGBA(var(--color-black), .05);
+  
+  /* Loading indicator */
+  $spinner-border-top: 3px solid RGBA(var(--color-white), .2);
+  $spinner-border-right: 3px solid RGBA(var(--color-white), .2);
+  $spinner-border-bottom: 3px solid RGBA(var(--color-white), .2);
+  $spinner-border-left: 3px solid RGB(var(--color-primary));
+  
+  /* Order Status Icons */
+  $order-status-processing: RGB(var(--color-warning));
+  $order-status-error: RGB(var(--color-error));
+  $order-status-completed: RGB(var(--color-success));
+  
+  /* Fixed sidebar (account page, etc). */
+  $fixed-sidebar-shadow: 0 10px 20px RGBA(var(--color-black), .05);
+  
+  /* Product details page */
+  $product-bg-lightbox: RGBA(var(--color-form-border), .3);
+  $product-lightbox-image-shadow: 0 10px 20px RGBA(var(--color-black), .2);
+  $product-carousel-shadow: inset 0 1px 3px 2px RGBA(var(--color-black), .04);
+  $product-carousel-shadow-active: 0 2px 7px RGBA(var(--color-primary), .66), inset 0 1px 3px 2px RGBA(var(--color-black), .04);
+  $product-qty-input-shadow: inset 0 1px 3px RGB(var(--color-gray-400));
+  
+  /* Header */
+  $submenu-bg: 0 2px 8px RGBA(var(--color-black), .05);
+  
+  /* Aside */
+  $cart-aside-shadow: -4px 5px 20px RGBA(var(--color-black), .1);
+  $configure-border-color: RGBA(var(--color-gray-500), 0.8);
+  
+  /*Cart*/
+  $checkout-steps-indicator: 8px solid RGB(var(--color-white));
+  $content-list-border: 1px solid RGB(var(--color-form-border));
+  $cart-summary-border: 1px solid RGB(var(--color-sections-border));
+  $checkout-bg-steps-indicator: RGB(var(--color-form-border));
+  $item-saved-bg: RGBA(var(--color-primary), .12);
+  $promo-border: 1px solid RGB(var(--color-gray-500));
+  $carts-list-border: 1px solid RGBA(var(--color-gray-500), .15);
+  $carts-list-shadow: 0 3px 10px RGBA(var(--color-black), .1);
+  $sub-heading-border: 1px solid RGBA(var(--color-gray-500), .2);
+  
+  /* Order */
+  $orders-header-shadow: 0 5px 10px RGBA(var(--color-black), .03);
+  
+  /* Payment */
+  $thank-you-shadow: 0 10px 20px RGBA(var(--color-black), .2);
+  
+  /*Quote*/
+  
+  $box-shadow: 0 4px 8px 0 RGBA(var(--color-black), .2);
+  $btn-medium-bg: RGB(var(--color-secondary));
+  $btn-medium-color: $btn-medium-bg;
+  $btn-medium-color-hover: RGB(var(--color-white));
+  $accordion-color: RGB(var(--color-white));
+  $table-form-bg: RGB(var(--color-white));
+  $table-head-form-bg: RGB(var(--color-secondary));
+  $table-head-form-color: RGB(var(--color-white));
+  $table-form-bg-second: RGBA(var(--color-black), .05);
+  $item-title-color: RGB(var(--color-white));
+  $item-content-bg: RGB(var(--color-white));
+  $quote-summary-bg: RGB(var(--color-secondary));
+  $quote-summary-color: RGB(var(--color-white));
+  $quote-summary-border: RGBA(var(--color-gray-600), .28);
+  $quote-summary-shadow: 0 -1px 10px 0 RGBA(var(--color-black), .2);
+  
